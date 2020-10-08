@@ -1,0 +1,246 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css?family=Oswald&display=swap');
+@import url('https://fonts.googleapis.com/css?family=ZCOOL+QingKe+HuangYou&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Roboto+Slab&display=swap');
+
+body {
+    background: black;
+	height:100%;
+	width:100%;
+	margin:auto;
+}
+
+Section {
+    display: block;
+    overflow: auto;
+}
+
+div#entorno {
+    background: url("../_imagens/OGMOO70.jpg") no-repeat;
+    width: 1300px;
+    display: block;
+    margin: auto;
+}
+
+div#interface {
+    display: block;
+    width: 800px;
+    margin: auto;
+    border-radius: 30px;
+    background-color: rgba(0,0,0,.75);
+    border: 3px solid rgba(255,255,255,.30);
+}
+
+header#cabecalho {
+    font-family: 'Oswald', sans-serif;
+    text-align: center;
+    font-size: 35pt;
+    color: rgba(255,255,255,.85);
+    border-bottom: 2px solid rgba(255,255,255,.5);
+    padding: 15px
+}
+
+#album-fotos{
+
+    height: 100%;
+}
+
+ul#album-fotos {
+    position: relative;
+    display: inline-block;
+    vertical-align: top;
+    margin: 25px 0 25px 0;
+    width: 90%;
+    height: 100%;
+    list-style: none;
+}
+
+ul#album-fotos li {
+    float: left;
+    width: 150px;
+    height: 150px;
+    margin: 10px;
+    border-radius: 20%;
+    border: 5px solid rgba(88,88,88,.60);
+    background: rgba(255,255,255,.4);
+    box-shadow: 1px 1px 3px rgba(0,0,0,.80);
+    -webkit-transition: all 400ms ease-in;
+}
+
+ul#album-fotos li span {
+    opacity: 0;
+    color: white;
+    border-radius: 20%;
+    text-shadow: 1px 1px 1px rgba(255,255,255,.8);
+    background: rgba(0,0,0,.5);
+    font-size: 9pt;
+    font-family: 'ZCOOL QingKe HuangYou', cursive;
+    padding: 5px;
+}
+
+ul#album-fotos li:hover {
+    -webkit-transform: scale(1.5);
+}
+
+ul#album-fotos li:hover span {
+    opacity: 1;
+}
+
+ul#album-fotos li#foto01{
+    background: url('../_imagens/ff.png') no-repeat;
+    background-size: 300px 300px;  
+    background-position: 50% 50%; 
+    background-color: rgba(255,255,255,.80);
+}
+
+ul#album-fotos li#foto01:hover {
+    background-size: 150px 150px;
+    background-position: 0px 0px;
+
+}
+
+ul#album-fotos li#foto02{
+    background: url('../_imagens/pj.png') no-repeat;
+    background-size: 300px 300px;  
+    background-position: 50% 50%; 
+    background-color: rgba(255,255,255,.80);
+}
+
+ul#album-fotos li#foto02:hover {
+    background-size: 150px 150px;
+    background-position: 0px 0px;
+    
+}
+
+ul#album-fotos li#foto03{
+    background: url('../_imagens/sitecurriculum.png') no-repeat;
+    background-size: 300px 300px;  
+    background-position: 50% 50%; 
+    background-color: rgba(255,255,255,.80);
+}
+
+ul#album-fotos li#foto03:hover {
+    background-size: 150px 150px;
+    background-position: 0px 0px;
+    
+}
+
+ul#album-fotos li#foto04{
+    background: url('../_imagens/Em_desenvolvimento.jpg') no-repeat;
+    background-size: 300px 300px; 
+    background-position: 50% 50%; 
+    background-color: rgba(255,255,255,.80);
+}
+
+ul#album-fotos li#foto04:hover {
+    background-size: 150px 150px;
+    background-position: 0px 0px;
+    
+}
+
+ul#album-fotos li#foto05{
+    background: url('../_imagens/foto5.jpg') no-repeat;
+    background-size: 300px 300px; 
+    background-position: 50% 50%; 
+    background-color: rgba(255,255,255,.80);
+}
+
+ul#album-fotos li#foto05:hover {
+    background-size: 150px 150px;
+    background-position: 0px 0px;
+    
+}
+
+ul#album-fotos li#foto06{
+    background: url('../_imagens/Em_desenvolvimento.jpg') no-repeat;
+    background-size: 300px 300px; 
+    background-position: 50% 50%; 
+    background-color: rgba(255,255,255,.80);
+}
+
+ul#album-fotos li#foto06:hover {
+    background-size: 150px 150px;
+    background-position: 0px 0px;
+    
+}
+
+
+section h1 {
+    font-family: 'Oswald', sans-serif;
+    font-size: 25pt;
+    color: rgba(255,255,255,.90);
+    margin: 25px 0 0 0;
+    width: 100%;
+    display: block;
+    background-color: rgba(164, 140, 129, 0.465);
+    box-shadow: 1px 1px 10px rgba(255,255,255,.5);
+    text-align: center;
+
+}
+section a {
+    text-decoration: none;
+}   
+
+
+footer {
+    text-align: center;
+    color: white;
+    border-top: 2px solid rgba(255,255,255,.5);
+}
+ footer p {
+     margin-top: 0px;
+     padding: 10px;
+ }
+ 
+ footer a {
+     color: tomato;
+ }
+ 
+ 
+ 
+ @media (max-width: 939px) {
+
+div#interface {
+    display: inline-block;
+    width: 380px;
+    height: 1615px;
+    margin-left: -140px;
+    border-radius: 30px;
+    margin-bottom: 0px;
+    margin-right: 2px;
+    background-color: rgba(0,0,0,.75);
+    border: 3px solid rgba(255,255,255,.4);
+}
+
+Section {
+    display: block;
+    overflow: auto;
+}
+
+body {
+    background: url("../_imagens/OGMOO70.jpg") repeat-y;
+	height:500px;
+	width:21%;
+	margin:auto;     
+}
+ul#album-fotos {
+    display: inline-block;
+    width: 250px;
+    height: 1250px;
+    margin-top: -78px;
+    /*margin-left: 70px;*/
+   /* padding: 50px;*/
+    /*overflow: auto;*/
+    list-style: none;
+
+}
+ul#album-fotos li {
+   float: left;
+    width: 280px;
+    height: 300px;
+    margin: 5px;
+   margin-left: -5px;
+}
+
+}
+ 
